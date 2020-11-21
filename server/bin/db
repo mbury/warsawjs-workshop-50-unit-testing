@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+const knex = require('knex')(require('../knexfile'));
+
+async function init() {
+  await knex.migrate.latest({
+    directory: './db/migrations',
+  });
+  await knex.seed.run({
+    directory: './db/seeds',
+  });
+  console.log('Initialize database complete');
+  process.exit(0);
+}
+init();
