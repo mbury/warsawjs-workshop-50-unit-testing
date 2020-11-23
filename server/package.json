@@ -5,7 +5,7 @@
   "scripts": {
     "knex": "knex",
     "db": "node ./bin/db",
-    "test": "",
+    "test": "jest",
     "start": "cross-env NODE_ENV=development PORT=4000 DEBUG=knex:query,app:* DEBUG_COLORS=yes nodemon ./bin/www"
   },
   "dependencies": {

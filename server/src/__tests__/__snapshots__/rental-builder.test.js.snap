@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rental builder should return valid rental class 1`] = `
+Rental {
+  "car_id": 1,
+  "client_id": 1,
+  "deposit": 5000,
+  "rental_id": 1,
+  "state": "RESERVED",
+}
+`;
